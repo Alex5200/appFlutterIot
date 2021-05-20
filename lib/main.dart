@@ -61,11 +61,15 @@ class FirstRoute extends StatelessWidget {
                     //btn 2
                     style: btnStyle,
                     onPressed: () {
-          final snackBar = SnackBar(
-            content: Text('Yay! A SnackBar!'),
-            action: SnackBarAction(
-              label: 'Undo',
-                    }
+                final snackBar = SnackBar(
+                  content: Text('Yay! A SnackBar!'),
+                  action: SnackBarAction(
+                  label: 'Undo',
+                  onPressed: () {
+                    // Some code to undo the change.
+                  },
+                ),
+              );
                     child: const Text(
                       'Submit',
                       style: TextStyle(
