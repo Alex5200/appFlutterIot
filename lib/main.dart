@@ -62,7 +62,7 @@ class FirstRoute extends StatelessWidget {
                     style: btnStyle,
                     onPressed: () {
                       final snackBar = SnackBar(
-                        content: Text('Yay! A SnackBar!'),
+                        content: Text('Hey you loging '),
                         action: SnackBarAction(
                           label: 'Undo',
                           onPressed: () {
