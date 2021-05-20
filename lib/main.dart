@@ -28,8 +28,6 @@ class FirstRoute extends StatelessWidget {
         title: Text('IoT'),
       ),
       body: Center(
-        child: Column(
-          children: <Widget>[
         Container(),
         Container(
           margin: EdgeInsets.fromLTRB(0, 0, 0, 0),
@@ -94,8 +92,7 @@ class FirstRoute extends StatelessWidget {
             ],
           ),
         ),
-      ],
-      ),
+
       drawer: Drawer(
         child: ListView(
           padding: EdgeInsets.zero,
