@@ -23,61 +23,58 @@ class FirstRoute extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.green,
-        title: Text('IoT'),
-      ),
-      body: Center(
+        appBar: AppBar(
+          backgroundColor: Colors.green,
+          title: Text('IoT'),
+        ),
+        body: Center(
           //Container(),
-        child: Container(
-          margin: EdgeInsets.fromLTRB(0, 0, 0, 0),
+          child: Container(
+            margin: EdgeInsets.fromLTRB(0, 0, 0, 0),
             child: new Row(
-              children: <Widget>[
-               
-            ],
+              children: <Widget>[],
+            ),
           ),
         ),
-      ),
-          drawer: Drawer(
-            child: ListView(
-              padding: EdgeInsets.zero,
-              children: <Widget>[
-                DrawerHeader(
-                  decoration: BoxDecoration(
-                    color: Colors.green,
-                  ),
-                  child: Text('Enter room',
-                      style: TextStyle(
-                        fontSize: 34,
-                        color: Colors.white,
-                      )),
+        drawer: Drawer(
+          child: ListView(
+            padding: EdgeInsets.zero,
+            children: <Widget>[
+              DrawerHeader(
+                decoration: BoxDecoration(
+                  color: Colors.green,
                 ),
-                ListTile(
-                  title: Text('Add device'),
-                  onTap: () {},
-                ),
-                ListTile(
-                  title: Text('Device 1'),
-                  onTap: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) => Deviceone()),
-                    );
-                  },
-                ),
-                ListTile(
-                  title: Text('Device 2'),
-                  onTap: () {
-                    // Update the state of the app
-                    // ...
-                    // Then close the drawer
-                    Navigator.pop(context);
-                  },
-                ),
-              ],
-            ),
-          )),
-    );
+                child: Text('Enter room',
+                    style: TextStyle(
+                      fontSize: 34,
+                      color: Colors.white,
+                    )),
+              ),
+              ListTile(
+                title: Text('Add device'),
+                onTap: () {},
+              ),
+              ListTile(
+                title: Text('Device 1'),
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => Deviceone()),
+                  );
+                },
+              ),
+              ListTile(
+                title: Text('Device 2'),
+                onTap: () {
+                  // Update the state of the app
+                  // ...
+                  // Then close the drawer
+                  Navigator.pop(context);
+                },
+              ),
+            ],
+          ),
+        ));
   }
 }
 
