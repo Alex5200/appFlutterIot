@@ -76,12 +76,14 @@ class FirstRoute extends StatelessWidget {
                         style: btnStyle,
                         onPressed: () {
                           final snackBar = SnackBar(
-                            content: Text('Hey you loging '),
+                            content: Text(
+                              'Hey you loging ',
+                              style: fontSize(21.0),
+                            ),
                             backgroundColor: Colors.green,
                             //color: Colors.white,
 
                             action: SnackBarAction(
-                              fontSize: 21.0,
                               textColor: Colors.white,
                               label: 'Ok',
                               onPressed: () {
