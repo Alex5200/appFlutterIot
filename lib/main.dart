@@ -81,9 +81,7 @@ class FirstRoute extends StatelessWidget {
                             //color: Colors.white,
 
                             action: SnackBarAction(
-                              style: SnackBarAction(
-                                fontSize: 21.0,
-                              ),
+                              fontSize: 21.0,
                               textColor: Colors.white,
                               label: 'Ok',
                               onPressed: () {
