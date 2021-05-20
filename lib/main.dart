@@ -52,7 +52,9 @@ class FirstRoute extends StatelessWidget {
               ),
               Expanded(
                 child: Container(
-                  width: 250,
+                  margin: EdgeInsets.fromLTRB(10, 0, 10, 0),
+                  alignment: Alignment(2.0, 2.0),
+                  width: 350,
                   height: 50,
                   child: TextButton(
                     //btn 2
