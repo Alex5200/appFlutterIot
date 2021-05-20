@@ -29,14 +29,14 @@ class FirstRoute extends StatelessWidget {
       ),
       body: Center(
           //Container(),
-          child: Container(
-            margin: EdgeInsets.fromLTRB(0, 0, 0, 0),
+        child: Container(
+          margin: EdgeInsets.fromLTRB(0, 0, 0, 0),
             child: new Row(
               children: <Widget>[
                
-              ],
-            ),
+            ],
           ),
+        ),
       ),
           drawer: Drawer(
             child: ListView(
