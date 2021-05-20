@@ -30,10 +30,10 @@ class FirstRoute extends StatelessWidget {
       body: Center(
         child: Container(
           child: new Row(
+            margin: EdgeInsets.fromLTRB(10, 0, 0, 0),
             children: <Widget>[
               Expanded(
                 child: Container(
-                  margin: EdgeInsets.fromLTRB(10, 0, 0, 0),
                   //alignment: Alignment(2.0, 2.0),
                   width: 350,
                   height: 150,
@@ -52,7 +52,6 @@ class FirstRoute extends StatelessWidget {
               ),
               Expanded(
                 child: Container(
-                  margin: EdgeInsets.fromLTRB(0, 10, 0, 0),
                   //alignment: Alignment(2.0, 2.0),
                   width: 350,
                   height: 150,
