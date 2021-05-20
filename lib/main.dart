@@ -34,7 +34,7 @@ class FirstRoute extends StatelessWidget {
               width: 320,
               height: 50,
               child: TextField(
-                autofocus: false,
+                autofocus: true,
                 style: TextStyle(
                   fontSize: 21,
                 ),
