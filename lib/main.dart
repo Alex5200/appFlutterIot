@@ -64,7 +64,7 @@ class FirstRoute extends StatelessWidget {
                       final snackBar = SnackBar(
                         content: Text('Hey you loging '),
                         backgroundColor: Colors.green,
-                        color: Colors.white,
+                        //color: Colors.white,
                         action: SnackBarAction(
                           label: 'Ok',
                           onPressed: () {
