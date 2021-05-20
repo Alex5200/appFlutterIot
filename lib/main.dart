@@ -34,7 +34,7 @@ class FirstRoute extends StatelessWidget {
               Expanded(
                 child: Container(
                   alignment: Alignment(2.0, 2.0),
-                  padding: EdgeInsets.left(16.0),
+                  padding: EdgeInsets.all(16.0),
                   width: 350,
                   height: 50,
                   child: TextButton(
