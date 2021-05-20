@@ -38,7 +38,7 @@ class FirstRoute extends StatelessWidget {
                   margin: EdgeInsets.fromLTRB(10, 50, 10, 50),
 
                   width: 150,
-                  height: 150,
+                  height: 50,
                   child: TextButton(
                       // btn 1
                       style: btnStyle,
