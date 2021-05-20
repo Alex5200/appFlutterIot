@@ -29,6 +29,13 @@ class FirstRoute extends StatelessWidget {
       ),
       body: Center(
         child: Container(
+          TextField(
+            obscureText: true,
+            decoration: InputDecoration(
+              border: OutlineInputBorder(),
+              labelText: 'Password',
+            ),
+          ),
           margin: EdgeInsets.fromLTRB(0, 0, 0, 0),
           child: new Row(
             children: <Widget>[
