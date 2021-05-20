@@ -72,9 +72,6 @@ class FirstRoute extends StatelessWidget {
                       width: 350,
                       height: 50,
                       child: TextButton(
-                        style: TextStyle(
-                          fontSize: 21.0,
-                        ),
                         //btn 2
                         style: btnStyle,
                         onPressed: () {
@@ -82,7 +79,11 @@ class FirstRoute extends StatelessWidget {
                             content: Text('Hey you loging '),
                             backgroundColor: Colors.green,
                             //color: Colors.white,
+
                             action: SnackBarAction(
+                              style: SnackBarAction(
+                                fontSize: 21.0,
+                              ),
                               textColor: Colors.white,
                               label: 'Ok',
                               onPressed: () {
