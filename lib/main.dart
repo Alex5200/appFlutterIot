@@ -34,9 +34,9 @@ class FirstRoute extends StatelessWidget {
               width: 320,
               height: 50,
               child: TextField(
+                autofocus: false,
                 style: TextStyle(
                   fontSize: 21,
-                  color: Colors.green,
                 ),
                 //style: TextField(),
                 decoration: InputDecoration(border: OutlineInputBorder(), hintText: 'Enter a search term'),
