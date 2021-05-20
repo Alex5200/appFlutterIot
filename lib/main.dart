@@ -29,12 +29,14 @@ class FirstRoute extends StatelessWidget {
       ),
       body: Center(
         child: Container(
-          margin: EdgeInsets.fromLTRB(10, 0, 0, 0),
+          margin: EdgeInsets.fromLTRB(0, 0, 0, 0),
           child: new Row(
             children: <Widget>[
               Expanded(
                 child: Container(
                   //alignment: Alignment(2.0, 2.0),
+                  margin: EdgeInsets.fromLTRB(10, 0, 0, 0),
+
                   width: 150,
                   height: 150,
                   child: TextButton(
