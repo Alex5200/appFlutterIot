@@ -33,11 +33,8 @@ class FirstRoute extends StatelessWidget {
           child: new Row(
             children: <Widget>[
               Expanded(
-                  child: Container(
-                width: 50,
-              )),
-              Expanded(
                 child: Container(
+                  alignment: Alignment(2.0, 0),
                   width: 250,
                   height: 50,
                   child: TextButton(
