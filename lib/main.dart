@@ -64,7 +64,7 @@ class FirstRoute extends StatelessWidget {
                       final snackBar = SnackBar(
                         content: Text('Hey you loging '),
                         action: SnackBarAction(
-                          label: 'Undo',
+                          label: 'Ok',
                           onPressed: () {
                             // Some code to undo the change.
                           },
