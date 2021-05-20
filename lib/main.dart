@@ -29,7 +29,6 @@ class FirstRoute extends StatelessWidget {
       ),
       body: Center(
         child: Container(
-          alignment: Alignment(0.1, 1.2),
           child: new Row(
             children: <Widget>[
               Expanded(
