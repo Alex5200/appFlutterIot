@@ -35,7 +35,7 @@ class FirstRoute extends StatelessWidget {
               Expanded(
                 child: Container(
                   //alignment: Alignment(2.0, 2.0),
-                  margin: EdgeInsets.fromLTRB(10, 0, 10, 0),
+                  margin: EdgeInsets.fromLTRB(10, 50, 10, 50),
 
                   width: 150,
                   height: 150,
