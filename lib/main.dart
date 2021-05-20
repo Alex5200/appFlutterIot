@@ -79,7 +79,7 @@ class FirstRoute extends StatelessWidget {
                             content: Text(
                               'Hey you loging ',
                               style: TextStyle(
-                                fontSize: 21.0,
+                                fontSize: 18.0,
                               ),
                             ),
                             backgroundColor: Colors.green,
