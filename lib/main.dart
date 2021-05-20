@@ -30,7 +30,7 @@ class FirstRoute extends StatelessWidget {
         body: Center(
             child: Column(children: <Widget>[
           Container(
-              margin: EdgeInsets.fromLTRB(10, 20, 10, 20),
+              margin: EdgeInsets.fromLTRB(10, 50, 10, 20),
               width: 320,
               height: 50,
               child: TextField(
