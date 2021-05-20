@@ -28,7 +28,7 @@ class FirstRoute extends StatelessWidget {
         title: Text('IoT'),
       ),
       body: Center(
-        Container(),
+        //Container(),
         Container(
           margin: EdgeInsets.fromLTRB(0, 0, 0, 0),
           child: new Row(
