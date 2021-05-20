@@ -31,7 +31,7 @@ class FirstRoute extends StatelessWidget {
             child: Column(children: <Widget>[
           Container(),
           Container(
-            child: Container(
+            Container(
               margin: EdgeInsets.fromLTRB(0, 0, 0, 0),
               child: new Row(
                 children: <Widget>[
