@@ -66,7 +66,7 @@ class FirstRoute extends StatelessWidget {
                         backgroundColor: Colors.green,
                         //color: Colors.white,
                         action: SnackBarAction(
-                          color: SnackBarAction(
+                          style: SnackBarAction(
                             color: Colors.white,
                           ),
                           label: 'Ok',
