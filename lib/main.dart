@@ -31,6 +31,9 @@ class FirstRoute extends StatelessWidget {
             child: Column(children: <Widget>[
           Container(
               child: TextField(
+            width: 150,
+            height: 50,
+            style: TextField(),
             decoration: InputDecoration(border: OutlineInputBorder(), hintText: 'Enter a search term'),
           )),
           Container(
