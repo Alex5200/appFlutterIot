@@ -9,7 +9,32 @@ void main() {
     ),
   );
 }
-final mianView = Expanded(
+
+final btnStyle = TextButton.styleFrom(
+  backgroundColor: Colors.green,
+);
+
+final btnTextStyle = TextStyle(
+  fontSize: 24,
+  color: Colors.white,
+);
+
+class FirstRoute extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+        appBar: AppBar(
+          backgroundColor: Colors.green,
+          title: Text('IoT'),
+        ),
+        body: Center(
+          child:Container(
+          children: <Widget>[
+            Container(
+            margin: EdgeInsets.fromLTRB(0, 0, 0, 0),
+            child: new Row(
+              children: <Widget>[
+                Expanded(
                   child: Container(
                     //alignment: Alignment(2.0, 2.0),
                     margin: EdgeInsets.fromLTRB(10, 0, 10, 0),
@@ -61,32 +86,11 @@ final mianView = Expanded(
                       ),
                     ),
                   ),
-);
-final btnStyle = TextButton.styleFrom(
-  backgroundColor: Colors.green,
-);
-
-final btnTextStyle = TextStyle(
-  fontSize: 24,
-  color: Colors.white,
-);
-
-class FirstRoute extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-        appBar: AppBar(
-          backgroundColor: Colors.green,
-          title: Text('IoT'),
-        ),
-        body: Center(
-          //Container(),
-          child: Container(
-            margin: EdgeInsets.fromLTRB(0, 0, 0, 0),
-            child: new Row(
-              children: <Widget>[],
+                ),
+              ],
             ),
-          ),
+          ],
+          )
         ),
         drawer: Drawer(
           child: ListView(
