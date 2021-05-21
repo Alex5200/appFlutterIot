@@ -37,6 +37,7 @@ final textfieldEmail = TextField(
   decoration: InputDecoration(border: OutlineInputBorder(), hintText: '', labelText: 'Email'),
 );
 final btnLoging = TextButton(
+  minLines: 6,
   // button
   // btn 1
   style: btnStyle,
