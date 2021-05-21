@@ -20,12 +20,11 @@ final btnTextStyle = TextStyle(
 //comnent
 final textfieldOne = TextField(
   // строка для ввода email
-  labelText: 'Password',
   autofocus: true,
   style: TextStyle(
     fontSize: 21,
   ),
-  decoration: InputDecoration(border: OutlineInputBorder(), hintText: 'Enter a search term'),
+  decoration: InputDecoration(border: OutlineInputBorder(), hintText: 'Enter a search term'), labelText: 'Password',
 );
 
 class FirstRoute extends StatelessWidget {
