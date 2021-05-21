@@ -149,7 +149,7 @@ class FirstRoute extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.green,
-        title: Text('IoT'),
+        title: Text('All device'),
       ),
       floatingActionButton: FloatingActionButton(
         backgroundColor: Colors.green,
@@ -163,7 +163,7 @@ class FirstRoute extends StatelessWidget {
               return AlertDialog(title: Text('Add device'), content: Text('Enter device'), actions: <Widget>[
                 new OutlineButton(
                   child: new Text(
-                    'out',
+                    'Exit',
                     style: TextStyle(
                       fontSize: 18,
                     ),
@@ -174,7 +174,7 @@ class FirstRoute extends StatelessWidget {
                 ),
                 new FlatButton(
                   child: new Text(
-                    'OK',
+                    'Add',
                     style: TextStyle(
                       color: Colors.white,
                       fontSize: 18,
