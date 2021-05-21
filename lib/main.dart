@@ -26,7 +26,7 @@ final textfieldPassword = TextField(
   maxLines: 23,
   autofocus: true,
   style: TextStyle(
-    fontSize: 21,
+    fontSize: 19,
   ),
   decoration: InputDecoration(border: OutlineInputBorder(), hintText: '', labelText: 'Password'),
 );
@@ -35,7 +35,7 @@ final textfieldEmail = TextField(
   // строка для ввода email
   autofocus: true,
   style: TextStyle(
-    fontSize: 21,
+    fontSize: 19,
   ),
   decoration: InputDecoration(border: OutlineInputBorder(), hintText: '', labelText: 'Email'),
 );
