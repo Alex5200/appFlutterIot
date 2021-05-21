@@ -119,7 +119,7 @@ class MainLoging extends StatelessWidget {
                     onPressed: () {
                       Navigator.push(
                         context,
-                        MaterialPageRoute(builder: (context) => Deviceone()),
+                        MaterialPageRoute(builder: (context) => FirstRoute()),
                       );
                     },
                     child: textLogingBtn,
