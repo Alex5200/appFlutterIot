@@ -60,90 +60,63 @@ final btnSub = Text(
   ),
 );
 
-// class Loging extends StatefulWidget {
-//   @override
-//   Widget build(BuildContext context) {
-//     return Scaffold();
-//   }
-// }
+class Loging extends StatefulWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.green,
+        title: Text('IoT'),
+      ),
+      body: Center(
+          child: Column(children: <Widget>[
+        Container(
+          margin: EdgeInsets.fromLTRB(10, 50, 10, 0),
+          width: 320,
+          height: 50,
+          child: textfieldEmail,
+        ),
+        Container(
+          margin: EdgeInsets.fromLTRB(10, 10, 10, 20),
+          width: 320,
+          height: 50,
+          child: textfieldPassword,
+        ),
+        Container(
+          child: Container(
+            margin: EdgeInsets.fromLTRB(0, 0, 0, 0),
+            child: new Row(
+              children: <Widget>[
+                Expanded(
+                  child: Container(
+                    //alignment: Alignment(2.0, 2.0),
+                    margin: EdgeInsets.fromLTRB(10, 0, 10, 0),
+                    width: 150,
+                    height: 50,
+                    child: btnLoging, // Render loging button
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ),
+        Container(
+          child: Container(
+            margin: EdgeInsets.fromLTRB(10, 20, 10, 0),
+            width: 350,
+            height: 50,
+            child: underAlert,
+          ),
+        ),
+      ])),
+    );
+  }
+}
 
 class FirstRoute extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     //dev s
-    final underAlert = TextButton(
-      //btn 2
-      style: btnStyle,
-      onPressed: () {
-        final snackBar = SnackBar(
-          content: Text(
-            'Hey you loging ',
-            style: TextStyle(
-              fontSize: 18.0,
-            ),
-          ),
-          backgroundColor: Colors.green,
-          //color: Colors.white,
-
-          action: SnackBarAction(
-            textColor: Colors.white,
-            label: 'Ok',
-            onPressed: () {
-              // Some code to undo the change.
-            },
-          ),
-        );
-        ScaffoldMessenger.of(context).showSnackBar(snackBar);
-      },
-      child: btnSub, // button submit
-    );
-    //dev e
-    return Scaffold(
-        appBar: AppBar(
-          backgroundColor: Colors.green,
-          title: Text('IoT'),
-        ),
-        body: Center(
-            child: Column(children: <Widget>[
-          Container(
-            margin: EdgeInsets.fromLTRB(10, 50, 10, 0),
-            width: 320,
-            height: 50,
-            child: textfieldEmail,
-          ),
-          Container(
-            margin: EdgeInsets.fromLTRB(10, 10, 10, 20),
-            width: 320,
-            height: 50,
-            child: textfieldPassword,
-          ),
-          Container(
-            child: Container(
-              margin: EdgeInsets.fromLTRB(0, 0, 0, 0),
-              child: new Row(
-                children: <Widget>[
-                  Expanded(
-                    child: Container(
-                      //alignment: Alignment(2.0, 2.0),
-                      margin: EdgeInsets.fromLTRB(10, 0, 10, 0),
-                      width: 150,
-                      height: 50,
-                      child: btnLoging, // Render loging button
-                    ),
-                  ),
-                ],
-              ),
-            ),
-          ),
-          Container(
-            child: Container(
-              margin: EdgeInsets.fromLTRB(10, 20, 10, 0),
-              width: 350,
-              height: 50,
-              child: underAlert,
-            ),
-          ),
-        ])),
         drawer: Drawer(
           child: ListView(
             padding: EdgeInsets.zero,
