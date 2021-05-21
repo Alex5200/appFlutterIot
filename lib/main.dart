@@ -26,6 +26,7 @@ final textfieldOne = TextField(
     fontSize: 21,
   ),
   decoration: InputDecoration(border: OutlineInputBorder(), hintText: '', labelText: 'Password'),
+  decoration: InputDecoration(border: OutlineInputBorder(), hintText: '', labelText: 'login'),
 );
 
 class FirstRoute extends StatelessWidget {
