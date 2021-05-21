@@ -60,6 +60,13 @@ final btnSub = Text(
   ),
 );
 
+class Loging extends StatefulWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold();
+  }
+}
+
 class FirstRoute extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -124,16 +131,17 @@ class FirstRoute extends StatelessWidget {
                       child: btnLoging, // Render loging button
                     ),
                   ),
-                  Expanded(
-                    child: Container(
-                      margin: EdgeInsets.fromLTRB(10, 0, 10, 0),
-                      width: 350,
-                      height: 50,
-                      child: underAlert,
-                    ),
-                  ),
+                  Expanded(),
                 ],
               ),
+            ),
+          ),
+          Container(
+            child: Container(
+              margin: EdgeInsets.fromLTRB(10, 0, 10, 0),
+              width: 350,
+              height: 50,
+              child: underAlert,
             ),
           ),
         ])),
