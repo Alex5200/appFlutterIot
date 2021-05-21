@@ -59,6 +59,32 @@ final btnSub = Text(
     color: Colors.white,
   ),
 );
+final underAlert = TextButton(
+  //btn 2
+  style: btnStyle,
+  onPressed: () {
+    final snackBar = SnackBar(
+      content: Text(
+        'Hey you loging ',
+        style: TextStyle(
+          fontSize: 18.0,
+        ),
+      ),
+      backgroundColor: Colors.green,
+      //color: Colors.white,
+
+      action: SnackBarAction(
+        textColor: Colors.white,
+        label: 'Ok',
+        onPressed: () {
+          // Some code to undo the change.
+        },
+      ),
+    );
+    ScaffoldMessenger.of(context).showSnackBar(snackBar);
+  },
+  child: btnSub, // button submit
+);
 
 class FirstRoute extends StatelessWidget {
   @override
@@ -101,32 +127,7 @@ class FirstRoute extends StatelessWidget {
                       margin: EdgeInsets.fromLTRB(10, 0, 10, 0),
                       width: 350,
                       height: 50,
-                      child: TextButton(
-                        //btn 2
-                        style: btnStyle,
-                        onPressed: () {
-                          final snackBar = SnackBar(
-                            content: Text(
-                              'Hey you loging ',
-                              style: TextStyle(
-                                fontSize: 18.0,
-                              ),
-                            ),
-                            backgroundColor: Colors.green,
-                            //color: Colors.white,
-
-                            action: SnackBarAction(
-                              textColor: Colors.white,
-                              label: 'Ok',
-                              onPressed: () {
-                                // Some code to undo the change.
-                              },
-                            ),
-                          );
-                          ScaffoldMessenger.of(context).showSnackBar(snackBar);
-                        },
-                        child: btnSub, // button submit
-                      ),
+                      child: underAlert,
                     ),
                   ),
                 ],
