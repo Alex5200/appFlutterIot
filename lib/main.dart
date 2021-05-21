@@ -24,7 +24,7 @@ final textfieldOne = TextField(
   style: TextStyle(
     fontSize: 21,
   ),
-  decoration: InputDecoration(border: OutlineInputBorder(), hintText: 'Enter a search term'), labelText: 'Password',
+  decoration: InputDecoration(border: OutlineInputBorder(), hintText: 'Enter a search term', labelText: 'Password'),
 );
 
 class FirstRoute extends StatelessWidget {
