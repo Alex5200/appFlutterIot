@@ -71,7 +71,6 @@ class MainLoging extends StatelessWidget {
 
   final TextEditingController controller = new TextEditingController();
   void _loginButton() {
-    print("Login from Page");
     print(_password);
     print(_username);
     print(_email);
@@ -113,6 +112,7 @@ class MainLoging extends StatelessWidget {
               fontSize: 21,
             ),
             decoration: InputDecoration(border: OutlineInputBorder(), hintText: '', labelText: 'Password'),
+            obscureText: true,
           ),
         ),
         Container(
