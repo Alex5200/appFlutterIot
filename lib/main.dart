@@ -62,16 +62,16 @@ class MainLoging extends StatelessWidget {
   final textLogingBtn = Text(
     // text button loging
     'Loging',
-    style: TextStyle(
-      fontSize: 21,
-      color: Colors.white,
-    ),
     onTap: () {
       Navigator.push(
         context,
         MaterialPageRoute(builder: (context) => Deviceone()),
       );
     },
+    style: TextStyle(
+      fontSize: 21,
+      color: Colors.white,
+    ),
   );
   @override
   Widget build(BuildContext context) {
