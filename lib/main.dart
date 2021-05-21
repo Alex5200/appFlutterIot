@@ -158,7 +158,7 @@ class FirstRoute extends StatelessWidget {
           showDialog(
             context: context,
             builder: (context) {
-              return AlertDialog(actions: <Widget>[
+              return AlertDialog(title: Text('Add device'), content: Text('Enter device'), actions: <Widget>[
                 new Text("enter device"),
                 new TextField(
                   decoration: InputDecoration(border: OutlineInputBorder(), hintText: '', labelText: 'Password'),
