@@ -171,6 +171,8 @@ class FirstRoute extends StatelessWidget {
                   },
                 ),
                 new FlatButton(
+                  width: 200,
+                  height: 50,
                   child: new Text(
                     'OK',
                     style: TextStyle(
