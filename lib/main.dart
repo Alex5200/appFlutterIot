@@ -21,6 +21,8 @@ final btnTextStyle = TextStyle(
 
 final textfieldPassword = TextField(
   // строка для ввода pass
+  minLines: 6,
+
   autofocus: true,
   style: TextStyle(
     fontSize: 21,
@@ -37,7 +39,6 @@ final textfieldEmail = TextField(
   decoration: InputDecoration(border: OutlineInputBorder(), hintText: '', labelText: 'Email'),
 );
 final btnLoging = TextButton(
-  minLines: 6,
   // button
   // btn 1
   style: btnStyle,
