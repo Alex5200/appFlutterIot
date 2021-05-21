@@ -160,18 +160,26 @@ class FirstRoute extends StatelessWidget {
             builder: (context) {
               return AlertDialog(title: Text('Add device'), content: Text('Enter device'), actions: <Widget>[
                 new OutlineButton(
-                  child: new Text('out'),
-                  onPressed: () {},
+                  child: new Text(
+                    'out',
+                    style: TextStyle(
+                      fontSize: 18,
+                    ),
+                  ),
+                  onPressed: () {
+                    Navigator.of(context).pop();
+                  },
                 ),
                 new FlatButton(
                   child: new Text(
                     'OK',
-                    style: TextStyle(color: Colors.white),
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 18,
+                    ),
                   ),
                   color: Colors.blue,
-                  onPressed: () {
-                    Navigator.of(context).pop();
-                  },
+                  onPressed: () {},
                 ),
               ]);
             },
