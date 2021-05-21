@@ -22,7 +22,7 @@ final btnTextStyle = TextStyle(
 final textfieldPassword = TextField(
   // строка для ввода pass
   minLines: 6,
-
+  maxLines: 23,
   autofocus: true,
   style: TextStyle(
     fontSize: 21,
