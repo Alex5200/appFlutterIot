@@ -82,8 +82,8 @@ class MainLoging extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.green,
-        child: Center(
-          title: Text('Welcome'),
+        title: Center(
+          child: Text('Welcome'),
         ),
       ),
       body: Center(
