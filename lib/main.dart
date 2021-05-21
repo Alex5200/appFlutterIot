@@ -36,6 +36,13 @@ final textfieldEmail = TextField(
   ),
   decoration: InputDecoration(border: OutlineInputBorder(), hintText: '', labelText: 'Email'),
 );
+final textLoging = Text(
+  'Loging',
+  style: TextStyle(
+    fontSize: 21,
+    color: Colors.white,
+  ),
+);
 
 class FirstRoute extends StatelessWidget {
   @override
@@ -72,16 +79,11 @@ class FirstRoute extends StatelessWidget {
                       width: 150,
                       height: 50,
                       child: TextButton(
-                          // btn 1
-                          style: btnStyle,
-                          onPressed: () {},
-                          child: const Text(
-                            'Loging',
-                            style: TextStyle(
-                              fontSize: 21,
-                              color: Colors.white,
-                            ),
-                          )),
+                        // btn 1
+                        style: btnStyle,
+                        onPressed: () {},
+                        child: textLoging,
+                      ),
                     ),
                   ),
                   Expanded(
