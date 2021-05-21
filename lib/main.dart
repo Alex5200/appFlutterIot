@@ -137,7 +137,7 @@ class FirstRoute extends StatelessWidget {
           ),
           Container(
             child: Container(
-              margin: EdgeInsets.fromLTRB(10, 0, 10, 0),
+              margin: EdgeInsets.fromLTRB(10, 20, 10, 0),
               width: 350,
               height: 50,
               child: underAlert,
