@@ -158,11 +158,12 @@ class FirstRoute extends StatelessWidget {
           showDialog(
             context: context,
             builder: (context) {
-              return AlertDialog(
-                  // Retrieve the text the that user has entered by using the
-                  // TextEditingController.
-                  //  content: Text(myController.text),
-                  );
+              return AlertDialog(children: [
+                Text("enter device"),
+                TextField(
+                  decoration: InputDecoration(border: OutlineInputBorder(), hintText: '', labelText: 'Password'),
+                ),
+              ]);
             },
           );
         },
