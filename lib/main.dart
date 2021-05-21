@@ -53,7 +53,7 @@ final textLogingBtn = Text(
 );
 final btnSub = Text(
   // button submit
-  'Submit',
+  'Registration',
   style: TextStyle(
     fontSize: 21,
     color: Colors.white,
