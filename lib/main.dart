@@ -60,12 +60,12 @@ final btnSub = Text(
   ),
 );
 
-class Loging extends StatefulWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold();
-  }
-}
+// class Loging extends StatefulWidget {
+//   @override
+//   Widget build(BuildContext context) {
+//     return Scaffold();
+//   }
+// }
 
 class FirstRoute extends StatelessWidget {
   @override
@@ -131,7 +131,6 @@ class FirstRoute extends StatelessWidget {
                       child: btnLoging, // Render loging button
                     ),
                   ),
-                  Expanded(),
                 ],
               ),
             ),
