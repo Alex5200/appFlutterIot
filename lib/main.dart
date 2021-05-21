@@ -4,7 +4,7 @@ void main() {
   runApp(
     MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: FirstRoute(),
+      home: Logings(),
     ),
   );
 }
@@ -60,13 +60,13 @@ final btnSub = Text(
   ),
 );
 
-class Loging extends StatefulWidget {
+class Logings extends StatefulWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.green,
-        title: Text('IoT'),
+        title: Text('Welcome'),
       ),
       body: Center(
           child: Column(children: <Widget>[
