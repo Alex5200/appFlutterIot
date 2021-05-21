@@ -184,8 +184,6 @@ class FirstRoute extends StatelessWidget {
                   onPressed: () {},
                 ),
                 new TextField(
-                  controller: myController,
-
                   // строка для ввода email
                   autofocus: true,
                   style: TextStyle(
