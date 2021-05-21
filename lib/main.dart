@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 void main() {
   runApp(
     MaterialApp(
-      title: 'Navigation Basics',
       debugShowCheckedModeBanner: false,
       home: FirstRoute(),
     ),
@@ -20,8 +19,10 @@ final btnTextStyle = TextStyle(
 );
 //comnent
 final textfieldOne = TextField(
+  // строка для ввода email
   autofocus: true,
   style: TextStyle(
+    title: 'one',
     fontSize: 21,
   ),
   decoration: InputDecoration(border: OutlineInputBorder(), hintText: 'Enter a search term'),
