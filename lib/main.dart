@@ -59,36 +59,38 @@ final btnSub = Text(
     color: Colors.white,
   ),
 );
-final underAlert = TextButton(
-  //btn 2
-  style: btnStyle,
-  onPressed: () {
-    final snackBar = SnackBar(
-      content: Text(
-        'Hey you loging ',
-        style: TextStyle(
-          fontSize: 18.0,
-        ),
-      ),
-      backgroundColor: Colors.green,
-      //color: Colors.white,
-
-      action: SnackBarAction(
-        textColor: Colors.white,
-        label: 'Ok',
-        onPressed: () {
-          // Some code to undo the change.
-        },
-      ),
-    );
-    ScaffoldMessenger.of(context).showSnackBar(snackBar);
-  },
-  child: btnSub, // button submit
-);
 
 class FirstRoute extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    //dev s
+    final underAlert = TextButton(
+      //btn 2
+      style: btnStyle,
+      onPressed: () {
+        final snackBar = SnackBar(
+          content: Text(
+            'Hey you loging ',
+            style: TextStyle(
+              fontSize: 18.0,
+            ),
+          ),
+          backgroundColor: Colors.green,
+          //color: Colors.white,
+
+          action: SnackBarAction(
+            textColor: Colors.white,
+            label: 'Ok',
+            onPressed: () {
+              // Some code to undo the change.
+            },
+          ),
+        );
+        ScaffoldMessenger.of(context).showSnackBar(snackBar);
+      },
+      child: btnSub, // button submit
+    );
+    //dev e
     return Scaffold(
         appBar: AppBar(
           backgroundColor: Colors.green,
