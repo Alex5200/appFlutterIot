@@ -19,16 +19,14 @@ final btnTextStyle = TextStyle(
 );
 //comnent\
 
-void textfieldOne() {
-  return TextField(
-    // строка для ввода email
-    autofocus: true,
-    style: TextStyle(
-      fontSize: 21,
-    ),
-    decoration: InputDecoration(border: OutlineInputBorder(), hintText: '', labelText: 'Password'),
-  );
-}
+final textfieldOne = TextField(
+  // строка для ввода email
+  autofocus: true,
+  style: TextStyle(
+    fontSize: 21,
+  ),
+  decoration: InputDecoration(border: OutlineInputBorder(), hintText: '', labelText: 'Password'),
+);
 
 class FirstRoute extends StatelessWidget {
   @override
