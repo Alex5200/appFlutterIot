@@ -20,9 +20,9 @@ final btnTextStyle = TextStyle(
 //comnent
 final textfieldOne = TextField(
   // строка для ввода email
+  title: "email",
   autofocus: true,
   style: TextStyle(
-    title: 'one',
     fontSize: 21,
   ),
   decoration: InputDecoration(border: OutlineInputBorder(), hintText: 'Enter a search term'),
