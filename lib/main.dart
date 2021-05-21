@@ -116,7 +116,7 @@ class MainLoging extends StatelessWidget {
                     // button
                     // btn 1
                     style: btnStyle,
-                    onTap: () {
+                    onPressed: () {
                       Navigator.push(
                         context,
                         MaterialPageRoute(builder: (context) => Deviceone()),
