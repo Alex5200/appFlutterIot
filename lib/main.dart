@@ -122,8 +122,7 @@ class FirstRoute extends StatelessWidget {
         backgroundColor: Colors.green,
         title: Text('IoT'),
       ),
-      body: Center(
-          drawer: Drawer(
+      drawer: Drawer(
         child: ListView(
           padding: EdgeInsets.zero,
           children: <Widget>[
@@ -161,7 +160,7 @@ class FirstRoute extends StatelessWidget {
             ),
           ],
         ),
-      )),
+      ),
     );
   }
 }
