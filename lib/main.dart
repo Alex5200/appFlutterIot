@@ -4,7 +4,7 @@ void main() {
   runApp(
     MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Logings(),
+      home: MainLoging(),
     ),
   );
 }
@@ -60,7 +60,7 @@ final btnSub = Text(
   ),
 );
 
-class Logings extends StatefulWidget {
+class MainLoging extends StatefulWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
