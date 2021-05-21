@@ -156,6 +156,7 @@ class FirstRoute extends StatelessWidget {
         // the text that the user has entered into the text field.
         onPressed: () {
           showDialog(
+            color: Colors.green,
             context: context,
             builder: (context) {
               return AlertDialog(title: Text('Add device'), content: Text('Enter device'), actions: <Widget>[
@@ -188,7 +189,6 @@ class FirstRoute extends StatelessWidget {
         tooltip: 'Show me the value!',
         child: Icon(
           Icons.add,
-          backgroundColor: Colors.green,
         ),
       ),
       drawer: Drawer(
