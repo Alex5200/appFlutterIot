@@ -19,14 +19,22 @@ final btnTextStyle = TextStyle(
 );
 //comnent\
 
-final textfieldOne = TextField(
-  // строка для ввода email
+final textfieldPassword = TextField(
+  // строка для ввода pass
   autofocus: true,
   style: TextStyle(
     fontSize: 21,
   ),
   decoration: InputDecoration(border: OutlineInputBorder(), hintText: '', labelText: 'Password'),
-  decoration: InputDecoration(border: OutlineInputBorder(), hintText: '', labelText: 'login'),
+);
+
+final textfieldEmail = TextField(
+  // строка для ввода email
+  autofocus: true,
+  style: TextStyle(
+    fontSize: 21,
+  ),
+  decoration: InputDecoration(border: OutlineInputBorder(), hintText: '', labelText: 'Email'),
 );
 
 class FirstRoute extends StatelessWidget {
@@ -43,7 +51,13 @@ class FirstRoute extends StatelessWidget {
             margin: EdgeInsets.fromLTRB(10, 50, 10, 20),
             width: 320,
             height: 50,
-            child: textfieldOne,
+            child: textfieldEmail,
+          ),
+          Container(
+            margin: EdgeInsets.fromLTRB(10, 50, 10, 20),
+            width: 320,
+            height: 50,
+            child: textfieldPassword,
           ),
           Container(
             child: Container(
