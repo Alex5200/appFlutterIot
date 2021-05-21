@@ -183,14 +183,15 @@ class FirstRoute extends StatelessWidget {
                   color: Colors.blue,
                   onPressed: () {},
                 ),
-                new TextField(
-                  // строка для ввода email
-                  autofocus: true,
-                  style: TextStyle(
-                    fontSize: 21,
-                  ),
-                  decoration: InputDecoration(border: OutlineInputBorder(), hintText: '', labelText: 'Enter room'),
-                ),
+                // new TextField(
+                //   // строка для ввода email
+
+                //   autofocus: true,
+                //   style: TextStyle(
+                //     fontSize: 21,
+                //   ),
+                //   decoration: InputDecoration(border: OutlineInputBorder(), hintText: '', labelText: 'Enter room'),
+                // ),
               ]);
             },
           );
