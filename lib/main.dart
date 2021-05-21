@@ -81,8 +81,7 @@ class MainLoging extends StatelessWidget {
   Widget build(BuildContext context) {
     //dev s
     return Scaffold(
-      appBar: Positioned(
-        top: 1.0,
+      appBar: AppBar(
         backgroundColor: Colors.green,
         title: Text(
           'Welcome',
