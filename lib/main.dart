@@ -216,11 +216,11 @@ class FirstRoute extends StatelessWidget {
                   )),
             ),
             ListTile(
-              title: Text('Add device'),
+              title: Text('Add room'),
               onTap: () {},
             ),
             ListTile(
-              title: Text('Device 1'),
+              title: Text(''),
               onTap: () {
                 Navigator.push(
                   context,
