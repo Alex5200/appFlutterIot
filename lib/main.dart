@@ -39,6 +39,7 @@ final textfieldEmail = TextField(
   ),
   decoration: InputDecoration(border: OutlineInputBorder(), hintText: '', labelText: 'Email'),
 );
+
 final btnLoging = TextButton(
   // button
   // btn 1
@@ -64,6 +65,18 @@ final btnSub = Text(
 );
 
 class MainLoging extends StatelessWidget {
+  var _email;
+  var _password;
+  var _username;
+
+  final TextEditingController controller = new TextEditingController();
+  void _loginButton() {
+    print("Login from Page");
+    print(_password);
+    print(_username);
+    print(_email);
+  }
+
   @override
   Widget build(BuildContext context) {
     //dev s
@@ -78,13 +91,27 @@ class MainLoging extends StatelessWidget {
           margin: EdgeInsets.fromLTRB(10, 50, 10, 0),
           width: 320,
           height: 50,
-          child: textfieldEmail,
+          child: TextField(
+            // строка для ввода email
+            autofocus: true,
+            style: TextStyle(
+              fontSize: 21,
+            ),
+            decoration: InputDecoration(border: OutlineInputBorder(), hintText: '', labelText: 'Email'),
+          ),
         ),
         Container(
           margin: EdgeInsets.fromLTRB(10, 30, 10, 30),
           width: 320,
           height: 50,
-          child: textfieldPassword,
+          child: TextField(
+            // строка для ввода email
+            autofocus: true,
+            style: TextStyle(
+              fontSize: 21,
+            ),
+            decoration: InputDecoration(border: OutlineInputBorder(), hintText: '', labelText: 'Password'),
+          ),
         ),
         Container(
           child: Container(
