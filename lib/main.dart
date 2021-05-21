@@ -56,6 +56,20 @@ final btnSub = Text(
     color: Colors.white,
   ),
 );
+final textLogingBtn = Text(
+  // text button loging
+  'Loging',
+  onTap: () {
+    Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) => Deviceone()),
+    );
+  },
+  style: TextStyle(
+    fontSize: 21,
+    color: Colors.white,
+  ),
+); // Render loging button
 
 class MainLoging extends StatelessWidget {
   final myController = TextEditingController();
@@ -106,27 +120,13 @@ class MainLoging extends StatelessWidget {
             child: new Row(
               children: <Widget>[
                 Expanded(
-                  child: Container(
-                    //alignment: Alignment(2.0, 2.0),
-                    margin: EdgeInsets.fromLTRB(10, 0, 10, 0),
-                    width: 150,
-                    height: 50,
-                    child: Text(
-                      // text button loging
-                      'Loging',
-                      onTap: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(builder: (context) => Deviceone()),
-                        );
-                      },
-                      style: TextStyle(
-                        fontSize: 21,
-                        color: Colors.white,
-                      ),
-                    ), // Render loging button
-                  ),
-                ),
+                    child: Container(
+                  //alignment: Alignment(2.0, 2.0),
+                  margin: EdgeInsets.fromLTRB(10, 0, 10, 0),
+                  width: 150,
+                  height: 50,
+                  child: textLogingBtn,
+                )),
               ],
             ),
           ),
