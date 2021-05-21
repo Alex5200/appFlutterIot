@@ -159,9 +159,19 @@ class FirstRoute extends StatelessWidget {
             context: context,
             builder: (context) {
               return AlertDialog(title: Text('Add device'), content: Text('Enter device'), actions: <Widget>[
-                new Text("enter device"),
-                new TextField(
-                  decoration: InputDecoration(border: OutlineInputBorder(), hintText: '', labelText: 'Password'),
+                new OutlineButton(
+                  child: new Text('out'),
+                  onPressed: () {},
+                ),
+                new FlatButton(
+                  child: new Text(
+                    'OK',
+                    style: TextStyle(color: Colors.white),
+                  ),
+                  color: Colors.blue,
+                  onPressed: () {
+                    Navigator.of(context).pop();
+                  },
                 ),
               ]);
             },
