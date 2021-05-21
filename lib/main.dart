@@ -19,10 +19,7 @@ final btnTextStyle = TextStyle(
 );
 //comnent\
 
-final textfieldOne = TextField(
-  var arrFild = new List(2);
-  arrFild[0] = "login";
-  arrFild[1] = "password"
+void textfieldOne = TextField(
   // строка для ввода email
   autofocus: true,
   style: TextStyle(
