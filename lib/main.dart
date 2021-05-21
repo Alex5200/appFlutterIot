@@ -81,7 +81,7 @@ class MainLoging extends StatelessWidget {
           child: textfieldEmail,
         ),
         Container(
-          margin: EdgeInsets.fromLTRB(10, 20, 10, 20),
+          margin: EdgeInsets.fromLTRB(10, 30, 10, 30),
           width: 320,
           height: 50,
           child: textfieldPassword,
