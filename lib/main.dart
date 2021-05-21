@@ -176,8 +176,6 @@ class FirstRoute extends StatelessWidget {
                     style: TextStyle(
                       color: Colors.white,
                       fontSize: 18,
-                      width: 200,
-                      height: 50,
                     ),
                   ),
                   color: Colors.blue,
@@ -188,7 +186,10 @@ class FirstRoute extends StatelessWidget {
           );
         },
         tooltip: 'Show me the value!',
-        child: Icon(Icons.add),
+        child: Icon(
+          Icons.add,
+          color: Color.green,
+        ),
       ),
       drawer: Drawer(
         child: ListView(
