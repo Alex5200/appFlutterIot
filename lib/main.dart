@@ -17,8 +17,12 @@ final btnTextStyle = TextStyle(
   fontSize: 24,
   color: Colors.white,
 );
-//comnent
+//comnent\
+
 final textfieldOne = TextField(
+  var arrFild = new List(2);
+  arrFild[0] = "login";
+  arrFild[1] = "password"
   // строка для ввода email
   autofocus: true,
   style: TextStyle(
