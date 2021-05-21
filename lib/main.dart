@@ -54,6 +54,12 @@ final textLogingBtn = Text(
     fontSize: 21,
     color: Colors.white,
   ),
+  onTap: () {
+    Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) => Deviceone()),
+    );
+  },
 );
 final btnSub = Text(
   // button submit
@@ -65,16 +71,7 @@ final btnSub = Text(
 );
 
 class MainLoging extends StatelessWidget {
-  var _email;
-  var _password;
-  var _username;
-
-  final TextEditingController controller = new TextEditingController();
-  void _loginButton() {
-    print(_password);
-    print(_username);
-    print(_email);
-  }
+  final myController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -93,6 +90,8 @@ class MainLoging extends StatelessWidget {
           width: 320,
           height: 50,
           child: TextField(
+            controller: myController,
+
             // строка для ввода email
             autofocus: true,
             style: TextStyle(
