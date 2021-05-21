@@ -40,19 +40,6 @@ final textfieldEmail = TextField(
   decoration: InputDecoration(border: OutlineInputBorder(), hintText: '', labelText: 'Email'),
 );
 
-final btnLoging = TextButton(
-  // button
-  // btn 1
-  style: btnStyle,
-  onTap: () {
-    Navigator.push(
-      context,
-      MaterialPageRoute(builder: (context) => Deviceone()),
-    );
-  },
-  child: textLogingBtn,
-);
-
 final btnSub = Text(
   // button submit
   'Registration',
@@ -125,7 +112,18 @@ class MainLoging extends StatelessWidget {
                   margin: EdgeInsets.fromLTRB(10, 0, 10, 0),
                   width: 150,
                   height: 50,
-                  child: btnLoging,
+                  child: TextButton(
+                    // button
+                    // btn 1
+                    style: btnStyle,
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => Deviceone()),
+                      );
+                    },
+                    child: textLogingBtn,
+                  ),
                 )),
               ],
             ),
