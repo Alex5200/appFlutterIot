@@ -4,7 +4,7 @@ void main() {
   runApp(
     MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: FirstRoute(),
+      home: MainLoging(),
     ),
   );
 }
@@ -123,47 +123,6 @@ class FirstRoute extends StatelessWidget {
         backgroundColor: Colors.green,
         title: Text('IoT'),
       ),
-      body: Center(
-          child: Column(children: <Widget>[
-        Container(
-          margin: EdgeInsets.fromLTRB(10, 50, 10, 0),
-          width: 320,
-          height: 50,
-          child: textfieldEmail,
-        ),
-        Container(
-          margin: EdgeInsets.fromLTRB(10, 10, 10, 20),
-          width: 320,
-          height: 50,
-          child: textfieldPassword,
-        ),
-        Container(
-          child: Container(
-            margin: EdgeInsets.fromLTRB(0, 0, 0, 0),
-            child: new Row(
-              children: <Widget>[
-                Expanded(
-                  child: Container(
-                    //alignment: Alignment(2.0, 2.0),
-                    margin: EdgeInsets.fromLTRB(10, 0, 10, 0),
-                    width: 150,
-                    height: 50,
-                    child: btnLoging, // Render loging button
-                  ),
-                ),
-              ],
-            ),
-          ),
-        ),
-        Container(
-          child: Container(
-            margin: EdgeInsets.fromLTRB(10, 20, 10, 0),
-            width: 350,
-            height: 50,
-            // child: underAlert,
-          ),
-        ),
-      ])),
       drawer: Drawer(
         child: ListView(
           padding: EdgeInsets.zero,
