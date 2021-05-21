@@ -36,7 +36,13 @@ final textfieldEmail = TextField(
   ),
   decoration: InputDecoration(border: OutlineInputBorder(), hintText: '', labelText: 'Email'),
 );
-final textLoging = Text(
+final btnLoging = TextButton(
+  // btn 1
+  style: btnStyle,
+  onPressed: () {},
+  child: textLogingBtn,
+);
+final textLogingBtn = Text(
   'Loging',
   style: TextStyle(
     fontSize: 21,
@@ -78,12 +84,7 @@ class FirstRoute extends StatelessWidget {
 
                       width: 150,
                       height: 50,
-                      child: TextButton(
-                        // btn 1
-                        style: btnStyle,
-                        onPressed: () {},
-                        child: textLoging,
-                      ),
+                      child: btnLoging,
                     ),
                   ),
                   Expanded(
