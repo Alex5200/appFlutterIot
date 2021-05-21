@@ -37,13 +37,23 @@ final textfieldEmail = TextField(
   decoration: InputDecoration(border: OutlineInputBorder(), hintText: '', labelText: 'Email'),
 );
 final btnLoging = TextButton(
+  // button
   // btn 1
   style: btnStyle,
   onPressed: () {},
   child: textLogingBtn,
 );
 final textLogingBtn = Text(
+  // text button loging
   'Loging',
+  style: TextStyle(
+    fontSize: 21,
+    color: Colors.white,
+  ),
+);
+final btnSub = Text(
+  // button submit
+  'Submit',
   style: TextStyle(
     fontSize: 21,
     color: Colors.white,
@@ -81,10 +91,9 @@ class FirstRoute extends StatelessWidget {
                     child: Container(
                       //alignment: Alignment(2.0, 2.0),
                       margin: EdgeInsets.fromLTRB(10, 0, 10, 0),
-
                       width: 150,
                       height: 50,
-                      child: btnLoging,
+                      child: btnLoging, // Render loging button
                     ),
                   ),
                   Expanded(
@@ -116,13 +125,7 @@ class FirstRoute extends StatelessWidget {
                           );
                           ScaffoldMessenger.of(context).showSnackBar(snackBar);
                         },
-                        child: const Text(
-                          'Submit',
-                          style: TextStyle(
-                            fontSize: 21,
-                            color: Colors.white,
-                          ),
-                        ),
+                        child: btnSub, // button submit
                       ),
                     ),
                   ),
