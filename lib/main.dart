@@ -152,11 +152,12 @@ class FirstRoute extends StatelessWidget {
         title: Text('IoT'),
       ),
       floatingActionButton: FloatingActionButton(
+        backgroundColor: Colors.green,
+
         // When the user presses the button, show an alert dialog containing
         // the text that the user has entered into the text field.
         onPressed: () {
           showDialog(
-            color: Colors.green,
             context: context,
             builder: (context) {
               return AlertDialog(title: Text('Add device'), content: Text('Enter device'), actions: <Widget>[
