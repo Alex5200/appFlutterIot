@@ -59,20 +59,6 @@ final btnSub = Text(
 
 class MainLoging extends StatelessWidget {
   final myController = TextEditingController();
-  final textLogingBtn = Text(
-    // text button loging
-    'Loging',
-    onTap: () {
-      Navigator.push(
-        context,
-        MaterialPageRoute(builder: (context) => Deviceone()),
-      );
-    },
-    style: TextStyle(
-      fontSize: 21,
-      color: Colors.white,
-    ),
-  );
   @override
   Widget build(BuildContext context) {
     //dev s
@@ -125,7 +111,20 @@ class MainLoging extends StatelessWidget {
                     margin: EdgeInsets.fromLTRB(10, 0, 10, 0),
                     width: 150,
                     height: 50,
-                    child: btnLoging, // Render loging button
+                    child: Text(
+                      // text button loging
+                      'Loging',
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => Deviceone()),
+                        );
+                      },
+                      style: TextStyle(
+                        fontSize: 21,
+                        color: Colors.white,
+                      ),
+                    ), // Render loging button
                   ),
                 ),
               ],
