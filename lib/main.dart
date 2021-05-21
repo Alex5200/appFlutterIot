@@ -21,12 +21,12 @@ final btnTextStyle = TextStyle(
 
 final textfieldPassword = TextField(
   // строка для ввода pass
+  width: 320,
+  height: 50,
   minLines: 6,
   maxLines: 23,
   autofocus: true,
   style: TextStyle(
-    width: 320,
-    height: 50,
     fontSize: 21,
   ),
   decoration: InputDecoration(border: OutlineInputBorder(), hintText: '', labelText: 'Password'),
