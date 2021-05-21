@@ -18,6 +18,14 @@ final btnTextStyle = TextStyle(
   fontSize: 24,
   color: Colors.white,
 );
+//comnent
+final textfieldOne = TextField(
+  autofocus: true,
+  style: TextStyle(
+    fontSize: 21,
+  ),
+  decoration: InputDecoration(border: OutlineInputBorder(), hintText: 'Enter a search term'),
+);
 
 class FirstRoute extends StatelessWidget {
   @override
@@ -30,17 +38,11 @@ class FirstRoute extends StatelessWidget {
         body: Center(
             child: Column(children: <Widget>[
           Container(
-              margin: EdgeInsets.fromLTRB(10, 50, 10, 20),
-              width: 320,
-              height: 50,
-              child: TextField(
-                autofocus: true,
-                style: TextStyle(
-                  fontSize: 21,
-                ),
-                //style: TextField(),
-                decoration: InputDecoration(border: OutlineInputBorder(), hintText: 'Enter a search term'),
-              )),
+            margin: EdgeInsets.fromLTRB(10, 50, 10, 20),
+            width: 320,
+            height: 50,
+            child: textfieldOne,
+          ),
           Container(
             child: Container(
               margin: EdgeInsets.fromLTRB(0, 0, 0, 0),
