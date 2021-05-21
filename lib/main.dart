@@ -125,7 +125,7 @@ class MainLoging extends StatelessWidget {
                   margin: EdgeInsets.fromLTRB(10, 0, 10, 0),
                   width: 150,
                   height: 50,
-                  child: textLogingBtn,
+                  child: btnLoging,
                 )),
               ],
             ),
