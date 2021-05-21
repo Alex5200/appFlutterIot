@@ -44,7 +44,12 @@ final btnLoging = TextButton(
   // button
   // btn 1
   style: btnStyle,
-  onPressed: () {},
+  onTap: () {
+    Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) => Deviceone()),
+    );
+  },
   child: textLogingBtn,
 );
 
@@ -59,12 +64,7 @@ final btnSub = Text(
 final textLogingBtn = Text(
   // text button loging
   'Loging',
-  onTap: () {
-    Navigator.push(
-      context,
-      MaterialPageRoute(builder: (context) => Deviceone()),
-    );
-  },
+
   style: TextStyle(
     fontSize: 21,
     color: Colors.white,
