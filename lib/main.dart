@@ -23,6 +23,7 @@ final textfieldPassword = TextField(
   // строка для ввода pass
   minLines: 6,
   maxLines: 23,
+  obscureText: true,
   autofocus: true,
   style: TextStyle(
     fontSize: 21,
