@@ -56,8 +56,7 @@ final textLogingBtn = Text(
   ),
   onTap: () {
     Navigator.push(
-      context,
-      MaterialPageRoute(builder: (context) => Deviceone()),
+      MaterialPageRoute(builder: () => Deviceone()),
     );
   },
 );
