@@ -20,7 +20,7 @@ final btnTextStyle = TextStyle(
 //comnent
 final textfieldOne = TextField(
   // строка для ввода email
-  title: "email",
+  labelText: 'Password',
   autofocus: true,
   style: TextStyle(
     fontSize: 21,
